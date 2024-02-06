@@ -4,13 +4,13 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 
-/*
+
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-  <React.StrictMode>
+  <React.StrictMode> 
     <App />
   </React.StrictMode>
-);*/
+);
 
 /*
 const root = ReactDOM.createRoot(document.getElementById('root')); //jsx
@@ -24,12 +24,14 @@ root.render(<Hola />)
 
 
 /* componente Li se le pueden pasar atributos y para utilizarlos se le pasa en ({children, estado, casa, edad}) del atributo */
+/*
 const root = ReactDOM.createRoot(document.getElementById('root'));
 const Li = ({ children, estado, casa, edad}) => 
   <li> {children} Mora {estado}  </li>
-
+*/
 
   /* se le puede pasar atributos al componente */
+  /*
 const Hola = () => 
   <ul>
     <Li estado="Hola" casa="Sucre" edad="10"> Figaro</Li> 
@@ -38,6 +40,6 @@ const Hola = () =>
   </ul>
 
 root.render(<Hola />)
-
+*/
 
 reportWebVitals();
