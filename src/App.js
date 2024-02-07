@@ -1,5 +1,6 @@
 import logo from './logo.svg';
 import './App.css';
+import './main.css';
 /*
 const Li = ({ children}) => {
   return (
@@ -18,6 +19,7 @@ function App() {
 
 /* agregando estilos a componentes inline */
 //puede ser funcion variable
+/*
 const estilo = (bg) => ({
   backgroundColor: bg,
   color:  '#ffff',
@@ -38,6 +40,28 @@ function App() {
     </ul>
   );
 }
+*/
 
+//usar css desde un archivo css import './main.css';
+const estilo = (bg) => ({
+  backgroundColor: bg,
+  color:  '#ffff',
+  padding: '10px 15px',
+  margin: '10px 15px'  
+})
+
+const Li = ({ children}) => {
+  return (
+    <li className='clase-li'> {children} </li> //se llama el estilo al componente
+  )
+}
+
+function App() {
+  return (
+    <ul className='clase-li'>
+      <Li estado="activo"> valos de li</Li>
+    </ul>
+  );
+}
 
 export default App;
